@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Abandoned Domains</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital@0;1&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<link rel="style.css" href="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="site-eyebrow">archive.org</div>
+        <h1>Abandoned Domains<br> <em>——</em>
+        <span style ="font-style:italic">Haiku from the Dead Web</span> </h1>
+        <p class="site-sub">
+            Somewhere between 1998 and now, ten thousand websites quietly died. Their words remain, frozen in amber. We read them back to you as poems.
+        </p>
+    </header>
+    <div class="controls">
+        <div class="pulse-dot idle" id="pulseDot"></div>
+        <button class="btn-transmit" id="btnTransmit">Begin Transmission</button>
+        <button class="btn-transmit" id="btnClear" style="border-color:var(--fog);
+        color:var(--ghost)">Clear Archive</button>
+    </div>
+    <div class="gallery" id="gallery">
+        <div class="empty-state" id="emptyState">
+            <div class="sigil">◈</div>
+            <div>No transmissions received.</div>
+            <div style="font-size: 0.8rem;
+            margin-top: 0.5rem;
+            color: var(--fog)">Initiate crawl to recover fragments</div>
+        </div>
+    </div>
+    <div class="crawl-log" id="crawlLog">
+        <div class="crawl-log-header">◈ signal log</div>
+        <div id="logLines"></div>
+    </div>
+
+
+<footer>
+    Ghost Domains<br>
+    powered by Wayback Machine<br>
+    
+</footer>
+<div class="modal-backdrop" id="modal">
+    <div class="modal-postcard" id="modalPostcard">
+        <button class="modal-close" id="modalClose">✕ close</button>
+        <div class="postcard" id="modalCard"></div>
+    </div>
+</div>
+</body>
+   
+</html>
